@@ -1,6 +1,6 @@
 [project]
 name = "screaming-snake-case-converter"
-version = "0.1.0"
+version = "0.1.1"
 description = "Converts between camelCase, PascalCase, snake_case, and SCREAMING_SNAKE_CASE identifier conventions."
 requires-python = ">=3.10"
 dependencies = []
