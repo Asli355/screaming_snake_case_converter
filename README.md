@@ -23,3 +23,10 @@ Different programming communities use different identifier conventions, and movi
 ## Edge cases
 
 Input that contains digits splits them as separate words when they appear next to letters: `version2Value` becomes `version_2_value`. Repeated underscores are treated as a single separator. Empty input returns an empty string for all functions.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
